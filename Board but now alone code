@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Board But Not Alone</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/1e/Dice_%28504524747%29.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">GAMES</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">JOIN US</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag"></span>
+  </div>
+  <div class="w3-display-left w3-center" style="margin-left: 150px">
+    <span class="w3-text-white" style="font-size:150px">Board But<br>Not Alone</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white"></span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-khaki w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT US</span></h5>
+    <p>Board but not Alone is a community built around bringing people together through board games.
+      We create events around games and bring people together for social interaction and some good competitive fun.
+      Below you can find out about our games we sponsor currently and how to create an event yourself. Remeber you may be "Board but you're never alone".
+    </p>
+    <p></p>
+    <div class="w3-panel w3-leftbar w3-dark-grey">
+      <p><i>"Board But Not Alone has helped me find like minded board gamers"</i></p>
+      <p>John Stewart</p>
+    </div>
+    <img src="https://849310.smushcdn.com/1803394/wp-content/uploads/2019/12/Meeple-090-2-1174x550-1.jpg?lossy=1&strip=1&webp=1" style="width:100%;max-width:1000px" class="w3-margin-top">
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">OUR GAMES</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Games');" id="myLink">
+        <div class="w3-col s6 tablink">Games</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Events');">
+        <div class="w3-col s6 tablink">Events</div>
+      </a>
+    </div>
+
+    <div id="Games" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Monopoly</h5>
+      <p class="w3-text-grey">Monopoly is a multi-player economics-themed board game. In the game, players roll two dice to move around the game board, buying and trading properties and developing them with houses and hotels. Players collect rent from their opponents, aiming to drive them into bankruptcy</p><br>
+    
+      <h5>Checkers</h5>
+      <p class="w3-text-grey">Checkers is a game played on a board checkered with squares of two colors. Two players compete in checkers to have the last piece on the board. The game pieces in checkers — which you can also call checkers — are usually red and black.</p><br>
+    
+      <h5>Dungeons & Dragons</h5>
+      <p class="w3-text-grey">Dungeons & Dragons is a structured, yet open-ended role-playing game. It is normally played indoors with the participants seated around a tabletop. Typically, one player takes on the role of Dungeon Master (DM) while the others each control a single character, representing an individual in a fictional setting.</p><br>
+    
+      <h5>Catan</h5>
+      <p class="w3-text-grey">Catan is a board game for two to four players in which you compete to gather resources and build the biggest settlements on the fictional island of Catan. It takes approximately one hour to play.</p><br>
+    
+      <h5>Clue</h5>
+      <p class="w3-text-grey">Each player assumes the role of one of the six suspects and attempts to deduce the correct answer by strategically moving around a game board representing the rooms of a mansion and collecting clues about the circumstances of the murder from the other players.</p>
+    </div>
+
+    <div id="Events" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Monopoly</h5>
+      <p><a href= "https://calendar.google.com/calendar/embed?src=94bk7re9a3pqurbrjn4vdseq70%40group.calendar.google.com&ctz=America%2FChicago" title="Monopoly Events" target="_blank" class="w3-hover-text-green">Monopoly Events</a></p>
+      
+      <h5>Checkers</h5>
+      <p><a href= "https://calendar.google.com/calendar/embed?src=02j9v7s346it65qh32mj1dah9s%40group.calendar.google.com&ctz=America%2FChicago" title="Checkers Events" target="_blank" class="w3-hover-text-green">Checkers Events</a></p>
+    
+      <h5>Dungeons & Dragons</h5>
+      <p><a href= "https://calendar.google.com/calendar/embed?src=t6rdq5j75oupocmtggibgpo1c8%40group.calendar.google.com&ctz=America%2FChicago" title="Dungeons & Dragons Events" target="_blank" class="w3-hover-text-green">Dungeons & Dragons Events</a></p>
+    
+      <h5>Catan</h5>
+      <p><a href= "https://calendar.google.com/calendar/embed?src=tog5m5vea3run4q1p558occvok%40group.calendar.google.com&ctz=America%2FChicago" title="Catan Events" target="_blank" class="w3-hover-text-green">Catan Events</a></p>
+    
+      <h5>Clue</h5>
+      <p><a href= "https://calendar.google.com/calendar/embed?src=br4ctr98n4h2ncfumuv4ek0o0o%40group.calendar.google.com&ctz=America%2FChicago" title="Clue Events" target="_blank" class="w3-hover-text-green">Clue Events</a></p>
+    </div>  
+    <img src="https://i.pinimg.com/564x/e8/72/29/e87229c48fc4a74296b63966ef12defa.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    <p>Join The Community Today</p>
+    <img src="https://img.grouponcdn.com/seocms/TKh3FrCVe5f1fhSzYujc5/Is_the_Board-Game_Cafe_the_Future_of_Gaming_-1281x679" class="w3-image" style="width:100%">
+    <p><span class="w3-tag">FYI!</span> </p>
+    <p><strong>Event Creation:</strong> Use the google form link below to create an event.</p>
+<p><a href= "https://forms.gle/ynCgAe7dRRzf3oEM9" title="Google Form" target="_blank" class="w3-hover-text-green">Create an Event</a></p>
+    </div>
+</div>
+
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p><a href="https://www.google.com/?client=safari&channel=mac_bm" title="BoardButNotAlone" target="_blank" class="w3-hover-text-green">BoardButNotAlone</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
